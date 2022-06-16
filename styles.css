@@ -116,6 +116,7 @@ button:active {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 #highlights:before {
   top: 1px;
   transform: translateY(-100%);
@@ -144,7 +145,7 @@ button:active {
   align-items: center;
   padding: 12px 24px;
 }
-.fas {
+.icon {
   padding: 24px;
   border: 2px rgb(223, 222, 222) solid;
   font-size: 24px;
