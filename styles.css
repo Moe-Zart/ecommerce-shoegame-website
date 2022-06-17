@@ -87,7 +87,7 @@ button {
 button:active {
   transform: translateY(2px);
 }
-.header-button {
+.browse-button {
   background-color: rgb(1, 155, 216);
   color: white;
   padding: 12px 24px;
@@ -132,6 +132,10 @@ button:active {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .highlights-wrapper {
   display: flex;
@@ -176,10 +180,8 @@ button:active {
   padding: 24px;
   display: flex;
   flex-direction: column;
-
 }
 .shoe-img-wrapper {
-
   border-radius: 4px;
   overflow: hidden;
   border: 2px black solid;
@@ -187,7 +189,7 @@ button:active {
   height: 210px;
   display: flex;
   align-items: end;
-margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 .shadow {
   -moz-box-shadow: inset 0 0 10px #000000;
@@ -198,7 +200,7 @@ margin-bottom: 8px;
   padding: 8px;
   transition: all 150ms ease;
   cursor: no-drop;
-vertical-align: bottom;
+  vertical-align: bottom;
 }
 .shoe-wrapper:hover .shoe-img {
   transform: scale(1.05);
@@ -224,12 +226,13 @@ vertical-align: bottom;
 .fa-star-half-alt {
   color: rgb(255, 208, 0);
 }
-#latest-arrivals {
-  height: 50vh;
+#explore {
+  height: 100vh;
+  background-color:#def5fc ;
 }
 
-@media(max-width: 786px){
-  .nav-link{
+@media (max-width: 786px) {
+  .nav-link {
     display: none;
   }
 }
