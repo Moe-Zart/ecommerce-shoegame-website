@@ -43,17 +43,30 @@ li {
   text-decoration: none;
   font-weight: bold;
   color: rgb(1, 155, 216);
-  font-size: 20px;
+  font-size: 24px;
   padding: 8px;
+}
+a:hover{
+  opacity: 0.7;
+  text-decoration: underline;
 }
 .no-cursor {
   cursor: no-drop;
+
+}
+.no-cursor:hover{
+  text-decoration: none;
+  opacity: 1;
 }
 .shoes-link {
   border: 2px rgb(1, 155, 216) solid;
   border-radius: 4px;
+  transition: all 200ms ease;
 }
-
+.shoes-link:hover{
+  background-color:rgb(1, 155, 216);
+  color: white;
+}
 .menu {
   background-color: transparent;
   border: none;
@@ -154,7 +167,7 @@ button:active {
   background-color: rgb(1, 155, 216);
   color: white;
   padding: 12px 24px;
-  font-size: 20px;
+  font-size: 32px;
   border-radius: 4px;
   border: none;
 }
@@ -172,7 +185,7 @@ button:active {
   background: url(./assets/wave.svg);
   position: absolute;
   content: "";
-  width: 101vw;
+  width: 100vw;
   height: 12vw;
   left: 0;
   z-index: 1;
@@ -202,6 +215,7 @@ button:active {
 }
 h3 {
   text-align: center;
+  font-size: 32px;
 }
 .highlights-wrapper {
   display: flex;
@@ -213,13 +227,13 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 12px 24px;
+  padding: 12px 40px;
   width: calc(100% / 3);
 }
 .icon {
   padding: 24px;
   border: 2px rgb(223, 222, 222) solid;
-  font-size: 24px;
+  font-size: 40px;
   color: rgb(1, 155, 216);
   margin: 12px;
   border-radius: 4px;
@@ -231,7 +245,9 @@ h3 {
 .highlight-p {
   padding: 12px 0;
   text-align: center;
+  font-size: 20px;
 }
+
 #features {
   padding-top: 8vw;
   background-color: #def5fc;
@@ -264,17 +280,17 @@ h3 {
   box-shadow: inset 0 0 10px #000000;
 }
 .shoe-img {
-  padding: 8px;
+  padding: 16px;
   transition: all 150ms ease;
   cursor: no-drop;
   vertical-align: bottom;
 }
 .shoe-wrapper:hover .shoe-img {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 .shoe-name {
-  font-size: 20px;
+  font-size: 22px;
   margin-bottom: 8px;
 }
 .shoe-name:hover {
@@ -285,7 +301,9 @@ h3 {
   text-decoration: line-through;
   opacity: 0.7;
 }
-
+.shoe-price{
+  font-size: 18px;
+}
 .shoe-rating {
   margin-bottom: 8px;
 }
@@ -343,24 +361,42 @@ footer {
   .shoegame-logo {
     width: 200px;
   }
+  .nav-link{
+    font-size: 20px;
+  }
   .header-text {
     padding: 0 24px;
   }
   h1 {
     font-size: 40px;
+    margin-top: 100px;
   }
   h2 {
     font-size: 32px;
   }
+  .icon{
+    font-size: 32px;
+  }
+  h3{
+    font-size: 20px;
+  }
+  .highlight-p{
+    font-size: 18px;
+  }
   .highlight {
     width: calc(100% / 2);
+    padding: 12px;
   }
   .shoe-wrapper {
     max-width: calc(100% / 2);
   }
+  .logo-link:hover .arrow-up {
+    transform: translateX(60px);
+  }
   .footer-link {
     font-size: 20px;
     padding: 0 12px;
+    margin: 8px;
   }
   .copyright {
     font-size: 16px;
@@ -389,4 +425,12 @@ footer {
   .arrow-up{
     font-size: 16px;
   }
+}
+@media (max-height: 500px) {
+header{
+  height: 300%;
+}
+.highlight{
+  width: calc(100%/2);
+}
 }
