@@ -426,7 +426,7 @@ footer {
     font-size: 16px;
   }
 }
-@media (max-height: 500px) {
+@media (max-height: 768px) {
 header{
   height: 300%;
 }
