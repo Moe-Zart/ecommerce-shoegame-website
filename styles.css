@@ -60,6 +60,7 @@ li {
   font-size: 40px;
   text-align: center;
   color: rgb(1, 155, 216);
+  display: none;
 }
 .menu-backdrop {
   position: absolute;
@@ -72,20 +73,30 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  visibility: hidden;
+  opacity: 0;
+  transition: all 300ms ease;
 }
-.menu-links{
+.menu-open .menu-backdrop {
+  visibility: visible;
+  opacity: 1;
+}
+.menu-links {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.menu-list{
+.menu-list {
   padding: 32px 0;
 }
-.menu-link{
+.menu-link {
   color: white;
   font-size: 40px;
   text-decoration: none;
+}
+.menu-open {
+  max-height: 100vh;
+  overflow-y: hidden;
 }
 .menu-close {
   position: absolute;
@@ -189,17 +200,21 @@ button:active {
   align-items: center;
   justify-content: center;
 }
+h3 {
+  text-align: center;
+}
 .highlights-wrapper {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
 }
 .highlight {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   padding: 12px 24px;
+  width: calc(100% / 3);
 }
 .icon {
   padding: 24px;
@@ -323,8 +338,44 @@ footer {
   opacity: 1;
   transform: translateX(100px);
 }
-@media (max-width: 786px) {
-  .nav-link {
+@media (max-width: 768px) {
+  .shoegame-logo {
+    width: 200px;
+  }
+  .header-text {
+    padding: 0 24px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  .highlight {
+    width: calc(100% / 2);
+  }
+  .shoe-wrapper {
+    max-width: calc(100% / 2);
+  }
+  .footer-link {
+    font-size: 20px;
+    padding: 0 12px;
+  }
+  .copyright {
+    font-size: 16px;
+  }
+}
+@media (max-width: 550px) {
+  .nav-links {
     display: none;
+  }
+  .menu {
+    display: block;
+  }
+  .highlight{
+    width: 100%;
+  }
+  .shoe-wrapper {
+    max-width: 100%;
   }
 }

@@ -23,23 +23,27 @@
           />
           <ul class="nav-links">
             <li><a href="" class="nav-link">Home</a></li>
-            <li><a href="" class="nav-link no-cursor">Contact</a></li>
+            <li><a class="nav-link no-cursor">Contact</a></li>
             <li><a href="#features" class="nav-link shoes-link">Shoes</a></li>
           </ul>
-          <button class="menu">
+          <button class="menu" onclick="openMenu()">
             <i class="fas fa-bars"></i>
           </button>
           <div class="menu-backdrop">
-            <button class="menu menu-close">
+            <button class="menu menu-close" onclick="closeMenu()">
               <i class="fas fa-times"></i>
             </button>
             <ul class="menu-links">
-              <li class="menu-list"><a class="menu-link" href="#">Home</a></li>
               <li class="menu-list">
-                <a class="menu-link" href="#features">Shoes</a>
+                <a class="menu-link" href="#" onclick="closeMenu()">Home</a>
               </li>
               <li class="menu-list">
-                <a class="menu-link no-cursor" href="">Concact</a>
+                <a class="menu-link" href="#features" onclick="closeMenu()"
+                  >Shoes</a
+                >
+              </li>
+              <li class="menu-list">
+                <a class="menu-link no-cursor">Contact</a>
               </li>
             </ul>
           </div>
@@ -338,9 +342,9 @@
           </a>
           <ul class="footer-links">
             <li><a class="footer-link underline" href="#">Home</a></li>
-            <li><a class="footer-link no-cursor" href="">About</a></li>
+            <li><a class="footer-link no-cursor">About</a></li>
             <li><a class="footer-link underline" href="#features">Shoes</a></li>
-            <li><a class="footer-link no-cursor" href="">Contact</a></li>
+            <li><a class="footer-link no-cursor">Contact</a></li>
           </ul>
           <p class="copyright">Copyright © 2022 Shoegame</p>
         </div>
