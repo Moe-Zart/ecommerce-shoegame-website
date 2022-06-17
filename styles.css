@@ -39,7 +39,7 @@ li {
 }
 .nav-link,
 .footer-link {
-  margin-left: 20px;
+  margin: 12px;
   text-decoration: none;
   font-weight: bold;
   color: rgb(1, 155, 216);
@@ -300,6 +300,7 @@ footer {
   background-color: rgb(44, 44, 44);
 }
 .footer-links {
+  margin: 0 auto;
   margin: 24px 0;
 }
 .footer-link {
@@ -336,7 +337,7 @@ footer {
 }
 .logo-link:hover .arrow-up {
   opacity: 1;
-  transform: translateX(100px);
+  transform: translateX(80px);
 }
 @media (max-width: 768px) {
   .shoegame-logo {
@@ -372,10 +373,20 @@ footer {
   .menu {
     display: block;
   }
+  .header-img-wrapper{
+    padding-bottom: 80px;
+  }
   .highlight{
     width: 100%;
   }
   .shoe-wrapper {
     max-width: 100%;
+  }
+  .footer-link {
+    font-size: 16px;
+    padding: 0 12px;
+  }
+  .arrow-up{
+    font-size: 16px;
   }
 }
