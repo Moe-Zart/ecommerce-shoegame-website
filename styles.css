@@ -431,7 +431,4 @@ footer {
   header {
     height: 300%;
   }
-  .highlight {
-    width: calc(100% / 2);
-  }
 }
