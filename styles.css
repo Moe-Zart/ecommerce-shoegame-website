@@ -46,15 +46,14 @@ li {
   font-size: 24px;
   padding: 8px;
 }
-a:hover{
+a:hover {
   opacity: 0.7;
   text-decoration: underline;
 }
 .no-cursor {
   cursor: no-drop;
-
 }
-.no-cursor:hover{
+.no-cursor:hover {
   text-decoration: none;
   opacity: 1;
 }
@@ -63,8 +62,8 @@ a:hover{
   border-radius: 4px;
   transition: all 200ms ease;
 }
-.shoes-link:hover{
-  background-color:rgb(1, 155, 216);
+.shoes-link:hover {
+  background-color: rgb(1, 155, 216);
   color: white;
 }
 .menu {
@@ -131,7 +130,6 @@ header {
   width: 100%;
   max-width: 720px;
   margin: 0 auto;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -173,7 +171,7 @@ button:active {
 }
 .header-img-wrapper {
   padding: 12px;
-  padding-bottom: 300px;
+  padding-bottom: 200px;
   z-index: 2;
 }
 #highlights {
@@ -301,7 +299,7 @@ h3 {
   text-decoration: line-through;
   opacity: 0.7;
 }
-.shoe-price{
+.shoe-price {
   font-size: 18px;
 }
 .shoe-rating {
@@ -361,7 +359,7 @@ footer {
   .shoegame-logo {
     width: 200px;
   }
-  .nav-link{
+  .nav-link {
     font-size: 20px;
   }
   .header-text {
@@ -374,13 +372,16 @@ footer {
   h2 {
     font-size: 32px;
   }
-  .icon{
+  .browse-button {
+    font-size: 16px;
+  }
+  .icon {
     font-size: 32px;
   }
-  h3{
+  h3 {
     font-size: 20px;
   }
-  .highlight-p{
+  .highlight-p {
     font-size: 18px;
   }
   .highlight {
@@ -409,10 +410,10 @@ footer {
   .menu {
     display: block;
   }
-  .header-img-wrapper{
+  .header-img-wrapper {
     padding-bottom: 80px;
   }
-  .highlight{
+  .highlight {
     width: 100%;
   }
   .shoe-wrapper {
@@ -422,15 +423,15 @@ footer {
     font-size: 16px;
     padding: 0 12px;
   }
-  .arrow-up{
+  .arrow-up {
     font-size: 16px;
   }
 }
 @media (max-height: 768px) {
-header{
-  height: 300%;
-}
-.highlight{
-  width: calc(100%/2);
-}
+  header {
+    height: 300%;
+  }
+  .highlight {
+    width: calc(100% / 2);
+  }
 }
