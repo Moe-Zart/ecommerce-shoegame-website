@@ -26,7 +26,7 @@ function renderShoes(filter) {
   <div class="shoe-price">
     <span class="shoe-price-slash">$${shoe.originalPrice.toFixed(
       2
-    )}</span> $${shoe.salePrice.toFixed(2)}
+    )}</span> $${shoe.originalPrice.toFixed(2)}
   </div>
 </div>
 </div>`;
