@@ -408,6 +408,9 @@ select {
   width: 100%;
   max-width: 200px;
 }
+.disabled-option{
+  color: rgb(191, 191, 191);
+}
 .shoes-header {
   width: 100%;
   display: flex;

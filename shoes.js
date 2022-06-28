@@ -11,7 +11,7 @@ function renderShoes(filter) {
   } else if (filter === "HIGH-LOW") {
     shoes.sort(
       (a, b) =>
-        (b.salePrice || b.originalPrice) - (b.salePrice || a.originalPrice)
+        (b.salePrice || b.originalPrice) - (a.salePrice || a.originalPrice)
     );
   } else if (filter === "RATING") {
     shoes.sort((a, b) => b.rating - a.rating);
@@ -42,11 +42,9 @@ function renderShoes(filter) {
 function priceHtml(originalPrice, salePrice) {
   //
   if (!salePrice) {
-    return `$${originalPrice.toFixed(2)}`;
+    return `$${originalPrice}`;
   }
-  return `<span class="shoe-price-slash">$${originalPrice.toFixed(
-    2
-  )}</span> $${salePrice.toFixed(2)}`;
+  return `<span class="shoe-price-slash">$${originalPrice}</span> $${salePrice}`;
 }
 
 function ratingsHtml(rating) {
@@ -89,73 +87,73 @@ function getShoes() {
     },
     {
       id: 3,
-      title: "Jordan 1 Retro High OG University Blue",
+      title: "Yeezy Boost 350 V2 Zebra",
       url: "./assets/shoe 3.png",
-      originalPrice: 49.95,
+      originalPrice: 399,
       salePrice: null,
       rating: 4.5,
     },
     {
       id: 4,
-      title: "Jordan 1 Retro High OG University Blue",
+      title: "NMD Pharrell Human Race Triple Black",
       url: "./assets/shoe 4.png",
-      originalPrice: 5,
+      originalPrice: 250,
       salePrice: null,
       rating: 4.5,
     },
     {
       id: 5,
-      title: "Jordan 1 Retro High OG University Blue",
+      title: "Air Force 1 White/Black",
       url: "./assets/shoe 5.png",
-      originalPrice: 49.95,
+      originalPrice: 150,
       salePrice: null,
       rating: 4.5,
     },
     {
       id: 6,
-      title: "Jordan 1 Retro High OG University Blue",
+      title: "Jordan 1 Retro High OG Court Purple",
       url: "./assets/shoe 6.png",
-      originalPrice: 4,
+      originalPrice: 350,
       salePrice: null,
       rating: 4.5,
     },
     {
       id: 7,
-      title: "Jordan 1 Retro High OG University Blue",
+      title: "Ultraboost 4.0 DNA White",
       url: "./assets/shoe 7.png",
-      originalPrice: 49.95,
+      originalPrice: 250,
       salePrice: null,
       rating: 4.5,
     },
     {
       id: 8,
-      title: "Jordan 1 Retro High OG University Blue",
+      title: "Jordan 4 Retro Black Cat",
       url: "./assets/shoe 8.png",
-      originalPrice: 495,
+      originalPrice: 750,
       salePrice: null,
       rating: 5,
     },
     {
       id: 9,
-      title: "Jordan 1 Retro High OG University Blue",
+      title: "Jordan 1 Retro High Dior",
       url: "./assets/shoe 9.png",
-      originalPrice: 49.95,
-      salePrice: null,
+      originalPrice: 15000,
+      salePrice: 12000,
       rating: 4.5,
     },
     {
       id: 10,
-      title: "Jordan 1 Retro High OG University Blue",
+      title: "Jordan 3 Retro Cardinal Red",
       url: "./assets/shoe 10.png",
-      originalPrice: 49.95,
-      salePrice: null,
+      originalPrice: 399,
+      salePrice: 299,
       rating: 4.5,
     },
     {
       id: 11,
-      title: "Jordan 1 Retro High OG University Blue",
+      title: "Yeezy Boost 350 V2 Dazzling Blue",
       url: "./assets/shoe 11.png",
-      originalPrice: 49.95,
+      originalPrice: 499,
       salePrice: null,
       rating: 4,
     },
@@ -163,8 +161,8 @@ function getShoes() {
       id: 12,
       title: "Jordan 1 Retro High OG University Blue",
       url: "./assets/shoe 12.png",
-      originalPrice: 49.95,
-      salePrice: null,
+      originalPrice: 599,
+      salePrice: 499,
       rating: 4,
     },
   ];
