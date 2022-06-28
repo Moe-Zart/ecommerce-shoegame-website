@@ -11,7 +11,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="index.js"></script>
-    <script src="books.js"></script>
+    <script src="shoes.js"></script>
   </head>
   <body id="shoes-body">
     <section>
@@ -55,30 +55,17 @@
       <section>
         <div class="container">
           <div class="row">
-            <h2>Featured <span class="blue-text">Shoes</span></h2>
-            <select id="filter">
-                <option value=""></option>
-            </select>
+            <div class="shoes-header">
+              <h2 class="all-shoes">All <span class="blue-text">Shoes</span></h2>
+              <select id="filter">
+                <option value="" disabled selected>Sort</option>
+                <option value="LOW-HIGH">Price, Low to High</option>
+                <option value="HIGH-LOW">Price, High to Low</option>
+                <option value="RATING">Rating</option>
+              </select>
+            </div>
             <div class="shoes">
-              <div class="shoe-wrapper">
-                <figure class="shoe-img-wrapper shadow">
-                  <img class="shoe-img" src="./assets/shoe 12.png" alt="" />
-                </figure>
-                <div class="shoe-details">
-                  <div class="shoe-name">
-                    Jordan 1 Retro High OG University Blue
-                  </div>
-                  <div class="shoe-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                  </div>
-                  <div class="shoe-price">
-                    <span class="shoe-price-slash">$599</span> $499
-                  </div>
-                </div>
+              
               </div>
             </div>
           </div>

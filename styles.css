@@ -384,6 +384,16 @@ select{
     width: 100%;
     max-width: 200px;
 }
+.shoes-header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.all-shoes{
+  margin: 0;
+  padding: 0 16px;
+}
 @media (max-width: 768px) {
   .shoegame-logo {
     width: 200px;
