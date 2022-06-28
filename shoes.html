@@ -37,10 +37,10 @@
           </button>
           <ul class="menu-links">
             <li class="menu-list">
-              <a class="menu-link" href="#" onclick="closeMenu()">Home</a>
+              <a class="menu-link" href="./index.html" onclick="closeMenu()">Home</a>
             </li>
             <li class="menu-list">
-              <a class="menu-link" href="#features" onclick="closeMenu()"
+              <a class="menu-link" href="#" onclick="closeMenu()"
                 >Shoes</a
               >
             </li>
@@ -53,11 +53,12 @@
     </section>
     <main id="shoes-main">
       <section>
-        <div class="container">
-          <div class="row">
+        <div class="container shoe-page-container">
+          <div class="row shoe-page-row">
             <a class="back-arrow-anchor" href="./index.html">
               <button class="back-arrow">
-                <i class="fas fa-arrow-left"></i> <span class="back-text">Back</span> 
+                <i class="fas fa-arrow-left"></i>
+                <span class="back-text">Back</span>
               </button>
             </a>
             <div class="shoes-header">
@@ -65,13 +66,22 @@
                 All <span class="blue-text">Shoes</span>
               </h2>
               <select id="filter" onchange="filterShoes(event)">
-                <option class="disabled-option" value="" disabled selected>Sort</option>
+                <option class="disabled-option" value="" disabled selected>
+                  Sort
+                </option>
                 <option value="LOW-HIGH">Price, Low to High</option>
                 <option value="HIGH-LOW">Price, High to Low</option>
                 <option value="RATING">Rating</option>
               </select>
             </div>
-            <div class="shoes shoe-page-shoes"></div>
+            <div class="shoes shoe-page-shoes shoes-loading">
+              <div class="shoes-loading-wrapper">
+                <i class="fas fa-circle circle-loading circle1"></i>
+                <i class="fas fa-circle circle-loading circle2"></i>
+                <i class="fas fa-circle circle-loading circle3"></i>
+                <i class="fas fa-circle circle-loading circle4"></i>
+              </div>
+            </div>
           </div>
         </div>
       </section>
