@@ -56,17 +56,18 @@
         <div class="container">
           <div class="row">
             <div class="shoes-header">
-              <h2 class="all-shoes">All <span class="blue-text">Shoes</span></h2>
-              <select id="filter">
+              <h2 class="all-shoes">
+                All <span class="blue-text">Shoes</span>
+              </h2>
+              <select id="filter" onchange="filterShoes(event)">
                 <option value="" disabled selected>Sort</option>
                 <option value="LOW-HIGH">Price, Low to High</option>
                 <option value="HIGH-LOW">Price, High to Low</option>
                 <option value="RATING">Rating</option>
               </select>
             </div>
-            <div class="shoes">
-              
-              </div>
+            <div class="shoes shoe-page-shoes">
+
             </div>
           </div>
         </div>
