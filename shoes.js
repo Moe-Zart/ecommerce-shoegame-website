@@ -4,9 +4,15 @@ function renderShoes(filter) {
 
   if (filter == "LOW-HIGH") {
     console.log(filter);
-    shoes.sort((a, b) => a.originalPrice - b.originalPrice);
+    shoes.sort(
+      (a, b) =>
+        (a.salePrice || a.originalPrice) - (b.salePrice || b.originalPrice)
+    );
   } else if (filter === "HIGH-LOW") {
-    shoes.sort((a, b) => b.originalPrice - a.originalPrice);
+    shoes.sort(
+      (a, b) =>
+        (b.salePrice || b.originalPrice) - (b.salePrice || a.originalPrice)
+    );
   } else if (filter === "RATING") {
     shoes.sort((a, b) => b.rating - a.rating);
   }
@@ -24,10 +30,8 @@ function renderShoes(filter) {
     ${ratingsHtml(shoe.rating)}
   </div>
   <div class="shoe-price">
-    <span class="shoe-price-slash">$${shoe.originalPrice.toFixed(
-      2
-    )}</span> $${shoe.originalPrice.toFixed(2)}
-  </div>
+    ${priceHtml(shoe.originalPrice, shoe.salePrice)}
+    </div>
 </div>
 </div>`;
   });
@@ -35,6 +39,16 @@ function renderShoes(filter) {
   shoesWrapper.innerHTML = shoesHtml.join("");
   //sets the below into the html
 }
+function priceHtml(originalPrice, salePrice) {
+  //
+  if (!salePrice) {
+    return `$${originalPrice.toFixed(2)}`;
+  }
+  return `<span class="shoe-price-slash">$${originalPrice.toFixed(
+    2
+  )}</span> $${salePrice.toFixed(2)}`;
+}
+
 function ratingsHtml(rating) {
   let ratingHTML = " ";
   for (let i = 0; i < Math.floor(rating); i++) {
@@ -54,22 +68,23 @@ setTimeout(() => {
 });
 
 // FAKE DATA
+
 function getShoes() {
   return [
     {
       id: 1,
       title: "Dunk Low Goldenrod",
       url: "./assets/shoe 1.png",
-      originalPrice: 49.95,
-      salePrice: 14.95,
+      originalPrice: 250,
+      salePrice: null,
       rating: 5,
     },
     {
       id: 2,
-      title: "Jordan 1 Retro High OG University Blue",
+      title: "Blazer Mid '77 Vintage White",
       url: "./assets/shoe 2.png",
-      originalPrice: 49.95,
-      salePrice: 14.95,
+      originalPrice: 150,
+      salePrice: null,
       rating: 4.5,
     },
     {
@@ -77,7 +92,7 @@ function getShoes() {
       title: "Jordan 1 Retro High OG University Blue",
       url: "./assets/shoe 3.png",
       originalPrice: 49.95,
-      salePrice: 14.95,
+      salePrice: null,
       rating: 4.5,
     },
     {
@@ -85,7 +100,7 @@ function getShoes() {
       title: "Jordan 1 Retro High OG University Blue",
       url: "./assets/shoe 4.png",
       originalPrice: 5,
-      salePrice: 14.95,
+      salePrice: null,
       rating: 4.5,
     },
     {
@@ -93,7 +108,7 @@ function getShoes() {
       title: "Jordan 1 Retro High OG University Blue",
       url: "./assets/shoe 5.png",
       originalPrice: 49.95,
-      salePrice: 14.95,
+      salePrice: null,
       rating: 4.5,
     },
     {
@@ -101,7 +116,7 @@ function getShoes() {
       title: "Jordan 1 Retro High OG University Blue",
       url: "./assets/shoe 6.png",
       originalPrice: 4,
-      salePrice: 14.95,
+      salePrice: null,
       rating: 4.5,
     },
     {
@@ -109,7 +124,7 @@ function getShoes() {
       title: "Jordan 1 Retro High OG University Blue",
       url: "./assets/shoe 7.png",
       originalPrice: 49.95,
-      salePrice: 14.95,
+      salePrice: null,
       rating: 4.5,
     },
     {
@@ -117,7 +132,7 @@ function getShoes() {
       title: "Jordan 1 Retro High OG University Blue",
       url: "./assets/shoe 8.png",
       originalPrice: 495,
-      salePrice: 14.95,
+      salePrice: null,
       rating: 5,
     },
     {
@@ -149,7 +164,7 @@ function getShoes() {
       title: "Jordan 1 Retro High OG University Blue",
       url: "./assets/shoe 12.png",
       originalPrice: 49.95,
-      salePrice: 14.95,
+      salePrice: null,
       rating: 4,
     },
   ];
