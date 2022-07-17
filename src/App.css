@@ -177,6 +177,7 @@ button:active {
 #highlights {
   position: relative;
   max-width: 100vw;
+  background-color: white;
 }
 #highlights:before,
 #highlights:after {
