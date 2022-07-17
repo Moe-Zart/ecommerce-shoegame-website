@@ -311,6 +311,9 @@ h3 {
 .fa-star-half-alt {
   color: rgb(255, 208, 0);
 }
+#latest-arrivals{
+  background-color: white;
+}
 #explore {
   background-color: #def5fc;
 }

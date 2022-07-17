@@ -1,5 +1,5 @@
 import React from "react";
-import Shoe1 from "../assets/shoe 12.png";
+import Shoe12 from "../assets/shoe 12.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Features = () => {
@@ -13,7 +13,7 @@ const Features = () => {
           <div className="shoes">
             <div className="shoe-wrapper">
               <figure className="shoe-img-wrapper shadow">
-                <img className="shoe-img" src={Shoe1} alt="" />
+                <img className="shoe-img" src={Shoe12} alt="" />
               </figure>
               <div className="shoe-details">
                 <div className="shoe-name">
@@ -33,7 +33,7 @@ const Features = () => {
             </div>
             <div className="shoe-wrapper">
               <figure className="shoe-img-wrapper shadow">
-                <img className="shoe-img" src={Shoe1} alt="" />
+                <img className="shoe-img" src={Shoe12} alt="" />
               </figure>
               <div className="shoe-details">
                 <div className="shoe-name">
@@ -53,7 +53,7 @@ const Features = () => {
             </div>
             <div className="shoe-wrapper">
               <figure className="shoe-img-wrapper shadow">
-                <img className="shoe-img" src={Shoe1} alt="" />
+                <img className="shoe-img" src={Shoe12} alt="" />
               </figure>
               <div className="shoe-details">
                 <div className="shoe-name">
