@@ -2,6 +2,12 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ShoeGameLogo from "../assets/shoegame draft logo.png";
 const Nav = () => {
+  function openMenu() {
+    document.body.classList += " menu-open";
+  }
+  function closeMenu() {
+    document.body.classList.remove("menu-open");
+  }
   return (
     <nav>
       <div className="nav-container">
@@ -23,21 +29,21 @@ const Nav = () => {
             </a>
           </li>
         </ul>
-        <button className="menu" onclick="openMenu()">
+        <button className="menu" onClick={openMenu}>
           <FontAwesomeIcon icon="bars" />
         </button>
         <div className="menu-backdrop">
-          <button className="menu menu-close" onclick="closeMenu()">
+          <button className="menu menu-close" onClick={closeMenu}>
             <FontAwesomeIcon icon="times" />
           </button>
           <ul className="menu-links">
             <li className="menu-list">
-              <a className="menu-link" href="" onclick="closeMenu()">
+              <a className="menu-link" href="" onClick={closeMenu}>
                 Home{" "}
               </a>
             </li>
             <li className="menu-list">
-              <a className="menu-link" href="" onclick="closeMenu()">
+              <a className="menu-link" href="" onClick={closeMenu}>
                 Shoes
               </a>
             </li>
