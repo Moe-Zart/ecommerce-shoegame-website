@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ShoeGameLogo from "../assets/shoegame draft logo.png";
+import Shoes from "../pages/Shoes";
 const Nav = () => {
   function openMenu() {
     document.body.classList += " menu-open";
@@ -14,12 +15,12 @@ const Nav = () => {
         <img className="shoegame-logo" src={ShoeGameLogo} alt="" />
         <ul className="nav-links">
           <li>
-            <a href="" className="nav-link">
+            <a href="/" className="nav-link">
               Home
             </a>
           </li>
           <li>
-            <a href="" className="nav-link shoes-link">
+            <a href='/shoes' className="nav-link shoes-link">
               Shoes
             </a>
           </li>
@@ -43,7 +44,7 @@ const Nav = () => {
               </a>
             </li>
             <li className="menu-list">
-              <a className="menu-link" href="" onClick={closeMenu}>
+              <a className="menu-link" href='' onClick={closeMenu}>
                 Shoes
               </a>
             </li>
