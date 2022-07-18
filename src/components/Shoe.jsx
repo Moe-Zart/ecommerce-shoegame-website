@@ -1,7 +1,11 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBookSkull } from "@fortawesome/free-solid-svg-icons";
 
 const Shoe = (props) => {
+  const sPrice = props.shoe.salePrice;
+  const oPrice = props.shoe.originalPrice;
+  const rating = props.shoe.rating;
   return (
     <div className="shoe-wrapper">
       <figure className="shoe-img-wrapper shadow">
@@ -10,21 +14,24 @@ const Shoe = (props) => {
       <div className="shoe-details">
         <div className="shoe-name">{props.shoe.title}</div>
         <div className="shoe-rating">
-          <FontAwesomeIcon icon="star" className="fas fa-star" />
-          <FontAwesomeIcon icon="star" className="fas fa-star" />
-          <FontAwesomeIcon icon="star" className="fas fa-star" />
-          <FontAwesomeIcon icon="star" className="fas fa-star" />
-          <FontAwesomeIcon
-            icon="star-half-alt"
-            className="fas fa-star-half-alt"
-          />
+          {new Array(Math.floor(rating)).fill(0).map((_, index) => (
+            <FontAwesomeIcon icon="star" key={index} className="fas fa-star" />
+          ))}
+          {!Number.isInteger(rating) ? (
+            <FontAwesomeIcon
+              icon="star-half-alt"
+              className="fas fa-star-half-alt"
+            />
+          ) : null}
         </div>
         <div className="shoe-price">
-          <span className="shoe-price-slash">${() =>{
-           if(props.shoe.salePrice === null){
-            return props.shoe.salePrice
-           }
-           return props.shoe.originalPrice}}</span> ${props.shoe.originalPrice}
+          {sPrice ? (
+            <>
+              <span className="shoe-price-slash">${oPrice}</span> ${sPrice}
+            </>
+          ) : (
+            <>${oPrice}</>
+          )}
         </div>
       </div>
     </div>
