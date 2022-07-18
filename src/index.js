@@ -4,9 +4,9 @@ import './App.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faBars, faTimes, faShoppingCart, faStar, faStarHalfAlt, faTags, faCheckDouble, faTruckMoving, faArrowUp} from '@fortawesome/free-solid-svg-icons'
+import { faBars, faTimes, faShoppingCart, faStar, faStarHalfAlt, faTags, faCheckDouble, faTruckMoving, faArrowUp, faCircle, faArrowLeft} from '@fortawesome/free-solid-svg-icons'
 
-library.add(faBars, faTimes, faShoppingCart, faStar, faStarHalfAlt, faTags, faCheckDouble, faTruckMoving, faArrowUp)
+library.add(faBars, faTimes, faShoppingCart, faStar, faStarHalfAlt, faTags, faCheckDouble, faTruckMoving, faArrowUp, faCircle, faArrowLeft)
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

@@ -1,9 +1,9 @@
 import React from 'react';
-import ShoeHeader from '../components/ShoeHeader';
+import ShoeMain from '../components/ShoeMain';
 const Shoes = () => {
     return (
         <>
-            <ShoeHeader />
+            <ShoeMain />
         </>
     );
 }
