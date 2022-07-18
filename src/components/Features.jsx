@@ -2,11 +2,6 @@ import React from "react";
 import Shoe from "./Shoe";
 import Data from "../data";
 const Features = () => {
-  console.log(Data);
-  function render5Stars() {
-    const discShoes = 
-    console.log(discShoes);
-  }
   return (
     <section id="features">
       <div className="container">
