@@ -1,7 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ShoeGameLogo from "../assets/shoegame draft logo.png";
-import Shoes from "../pages/Shoes";
 const Nav = () => {
   function openMenu() {
     document.body.classList += " menu-open";

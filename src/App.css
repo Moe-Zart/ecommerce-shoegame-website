@@ -438,7 +438,9 @@ select {
   margin: 0;
   padding: 0 16px;
 }
-
+.shoe-description-container{
+  
+}
 
 
 @media (max-width: 768px) {

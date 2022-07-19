@@ -15,7 +15,7 @@ const Shoes = ({data: initialData}) => {
       )
     }
     else if(event.target.value=="RATING"){
-      setData(data.slice().sort((a,b)=>(b.rating - a.rating))
+      setData(data.slice().sort((a,b)=>(b.rating - a))
       )
     }
     }
@@ -31,7 +31,7 @@ const Shoes = ({data: initialData}) => {
                   icon="arrow-left"
                   className="fas fa-arrow-left"
                 />
-                <span className="back-text">Back</span>
+                <span className="back-text"> Back</span>
               </button>
             </a>
             <div className="shoes-header">

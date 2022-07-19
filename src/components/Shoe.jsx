@@ -1,6 +1,5 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBookSkull } from "@fortawesome/free-solid-svg-icons";
 
 const Shoe = (props) => {
   const sPrice = props.shoe.salePrice;

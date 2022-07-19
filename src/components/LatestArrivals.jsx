@@ -1,6 +1,4 @@
 import React from "react";
-import Shoe1 from "../assets/shoe 1.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Shoe from "./Shoe";
 import data from "../data";
 const LatestArrivals = () => {
