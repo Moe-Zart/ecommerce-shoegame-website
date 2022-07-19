@@ -7,7 +7,6 @@
 }
 html {
   scroll-behavior: smooth;
-  
 }
 body {
   max-width: 100vw;
@@ -68,7 +67,8 @@ a:hover {
   background-color: rgb(1, 155, 216);
   color: white;
 }
-.menu-close, .menu {
+.menu-close,
+.menu {
   position: absolute;
   right: 12px;
   top: 15px;
@@ -84,7 +84,7 @@ a:hover {
   position: absolute;
   display: none;
 }
-.menu-close{
+.menu-close {
   color: white;
 }
 
@@ -319,7 +319,7 @@ h3 {
 .fa-star-half-alt {
   color: rgb(255, 208, 0);
 }
-#latest-arrivals{
+#latest-arrivals {
   background-color: white;
 }
 #explore {
@@ -385,7 +385,7 @@ body {
 #shoes-main {
   flex: 1;
 }
-.shoe-page-container{
+.shoe-page-container {
   padding: 28px 12px;
 }
 .back-arrow {
@@ -438,10 +438,78 @@ select {
   margin: 0;
   padding: 0 16px;
 }
-.shoe-description-container{
-  
+.back-desc {
+  top: 0;
+  font-size: 20px;
+  margin-left: 0;
+  left: 60px;
+}
+.shoecont {
+  position: relative;
+  padding: 60px;
+}
+.shoe-description-container {
+  width: 100%;
+  margin-top: 12px;
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+}
+.shoe-description-img-wrapper {
+  margin: 50px 28px 20px 0;
+  padding-bottom: 30px;
+  width: 40vw;
+}
+.shoe-description-img {
+  max-height: 100%;
+  top: 10%;
+}
+.shoe-description-info-wrapper {
+  padding-left: 28px;
+  height: 100%;
+  width: 35%;
+  position: relative;
+}
+.womans {
+  color: #606266;
+  font-size: 14px;
+}
+.sizes {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.sizes-button {
+  background-color: #e8f9ff;
+  border: 1px #b9dce6 solid;
+  padding: 12px;
+  margin: 2px;
+  width: 48%;
+  border-radius: 4px;
+}
+.add-button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.add-to-cart {
+  position: absolute;
+  width: 80%;
+  padding: 16px 0;
+  font-size: 30px;
+  font-weight: bold;
+  bottom: 0;
+  background-color: rgb(1, 155, 216);
+  color: whitesmoke;
+  border: none;
+  border-radius: 8px;
 }
 
+.info-text {
+  text-align: left;
+}
 
 @media (max-width: 768px) {
   .shoegame-logo {
@@ -520,11 +588,11 @@ select {
     height: 300%;
   }
 }
-@media(max-width:480px){
-  .all-shoes{
+@media (max-width: 480px) {
+  .all-shoes {
     font-size: 28px;
   }
-  select{
+  select {
     max-width: 165px;
   }
 }
