@@ -20,7 +20,7 @@ const shoes = [
     url: shoe1,
     originalPrice: 249,
     salePrice: null,
-    rating: 5,
+    rating: 3.5,
   },
   {
     id: 2,
@@ -36,7 +36,7 @@ const shoes = [
     url: shoe3,
     originalPrice: 399,
     salePrice: null,
-    rating: 4.5,
+    rating: 4,
   },
   {
     id: 4,
@@ -44,7 +44,7 @@ const shoes = [
     url: shoe4,
     originalPrice: 249,
     salePrice: null,
-    rating: 4.5,
+    rating: 3.5,
   },
   {
     id: 5,
@@ -52,7 +52,7 @@ const shoes = [
     url: shoe5,
     originalPrice: 149,
     salePrice: null,
-    rating: 4.5,
+    rating: 3,
   },
   {
     id: 6,
@@ -60,7 +60,7 @@ const shoes = [
     url: shoe6,
     originalPrice: 349,
     salePrice: null,
-    rating: 4.5,
+    rating: 4,
   },
   {
     id: 7,
@@ -68,7 +68,7 @@ const shoes = [
     url: shoe7,
     originalPrice: 249,
     salePrice: null,
-    rating: 4.5,
+    rating: 3,
   },
   {
     id: 8,
@@ -76,7 +76,7 @@ const shoes = [
     url: shoe8,
     originalPrice: 749,
     salePrice: null,
-    rating: 5,
+    rating: 4.5,
   },
   {
     id: 9,
@@ -84,7 +84,7 @@ const shoes = [
     url: shoe9,
     originalPrice: 14999,
     salePrice: 11999,
-    rating: 4.5,
+    rating: 5,
   },
   {
     id: 10,
@@ -100,7 +100,7 @@ const shoes = [
     url: shoe11,
     originalPrice: 499,
     salePrice: null,
-    rating: 4,
+    rating: 3.5,
   },
   {
     id: 12,
@@ -108,7 +108,7 @@ const shoes = [
     url: shoe12,
     originalPrice: 599,
     salePrice: 499,
-    rating: 4,
+    rating: 5,
   },
   {
     id: 13,
@@ -132,7 +132,7 @@ const shoes = [
     url: shoe15,
     originalPrice: 249,
     salePrice: null,
-    rating: 4,
+    rating: 3,
   },
 ];
 export default shoes;
