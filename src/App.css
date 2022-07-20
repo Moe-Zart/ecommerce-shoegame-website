@@ -209,7 +209,9 @@ button:active {
   transform: translateY(100%) rotate(180deg);
 }
 .container {
-  padding: 56px;
+  padding: 40px;
+}
+.footer-container{
 }
 .row {
   width: 100%;
@@ -294,7 +296,6 @@ h3 {
   transition: all 150ms ease;
   max-height: 115%;
   max-width: 90%;
-  
 }
 .shoe-wrapper:hover .shoe-img {
   transform: scale(1.1);
@@ -532,6 +533,9 @@ select {
 }
 .recommended-shoes {
   padding: 0 60px;
+}
+.cart-container {
+  height:76vh;
 }
 @media (max-width: 768px) {
   .shoegame-logo {

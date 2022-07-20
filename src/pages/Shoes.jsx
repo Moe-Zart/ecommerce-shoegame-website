@@ -15,7 +15,7 @@ const Shoes = ({data: initialData}) => {
       )
     }
     else if(event.target.value=="RATING"){
-      setData(data.slice().sort((a,b)=>(b.rating - a))
+      setData(data.slice().sort((a,b)=>(b.rating - a.rating))
       )
     }
     }

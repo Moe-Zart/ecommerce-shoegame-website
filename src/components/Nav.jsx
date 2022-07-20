@@ -24,7 +24,7 @@ const Nav = () => {
             </a>
           </li>
           <li>
-            <a className="nav-link no-cursor">
+            <a className="nav-link" href="/cart">
               <FontAwesomeIcon icon="shopping-cart" />
             </a>
           </li>

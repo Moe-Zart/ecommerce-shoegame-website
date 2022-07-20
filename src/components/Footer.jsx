@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const Footer = () => {
     return (
         <footer>
-      <div className="container">
+      <div className="container footer-container">
         <div className="row">
           <a className="logo-link" href="#">
             <figure className="shoegame-logo logo-footer">
