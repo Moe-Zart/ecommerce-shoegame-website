@@ -281,6 +281,7 @@ h3 {
   height: 25vh;
   display: flex;
   align-items: end;
+  justify-content: center;
   margin-bottom: 8px;
 }
 .shadow {
@@ -291,8 +292,9 @@ h3 {
 .shoe-img {
   padding: 16px;
   transition: all 150ms ease;
-  vertical-align: bottom;
   max-height: 115%;
+  max-width: 90%;
+  
 }
 .shoe-wrapper:hover .shoe-img {
   transform: scale(1.1);
@@ -529,7 +531,7 @@ select {
   margin-left: 84px;
 }
 .recommended-shoes {
-  padding: 60px;
+  padding: 0 60px;
 }
 @media (max-width: 768px) {
   .shoegame-logo {
