@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b64221e1.css",
+    "main.js": "/static/js/main.2f5b3bca.js",
+    "static/js/787.cea0d0ad.chunk.js": "/static/js/787.cea0d0ad.chunk.js",
+    "static/media/man holding discount for shoes.png": "/static/media/man holding discount for shoes.3b5a894260b3e2d80743.png",
+    "static/media/shoe 11.png": "/static/media/shoe 11.3585d3ede484123f569a.png",
+    "static/media/shoe 12.png": "/static/media/shoe 12.cbc96817f208d3073f9e.png",
+    "static/media/shoe 8.png": "/static/media/shoe 8.970d11b38ba245acd25a.png",
+    "static/media/shoe 10.png": "/static/media/shoe 10.31522283468aaab3b886.png",
+    "static/media/shoe 9.png": "/static/media/shoe 9.cee56e987b58441afdff.png",
+    "static/media/shoegame draft logo.png": "/static/media/shoegame draft logo.c477a5e8c0c65ed93c7f.png",
+    "static/media/shoe 3.png": "/static/media/shoe 3.2d8d785fda861cb343c0.png",
+    "static/media/shoe 1.png": "/static/media/shoe 1.01dbf2986b05029cf0cd.png",
+    "static/media/shoe 14.png": "/static/media/shoe 14.adb8146e11015d4f9038.png",
+    "static/media/shoe 6.png": "/static/media/shoe 6.a1a83436d584ecfd21b1.png",
+    "static/media/shoe 4.png": "/static/media/shoe 4.714c7e7f6c87278440fd.png",
+    "static/media/shoe 13.png": "/static/media/shoe 13.6a7eb0b079dbf9f3152d.png",
+    "static/media/shoe 15.png": "/static/media/shoe 15.051e148aeba2ff25cd61.png",
+    "static/media/shoe 7.png": "/static/media/shoe 7.d1bdf5ef6fef25a4a22e.png",
+    "static/media/shoe 2.png": "/static/media/shoe 2.6d87c0a73a3ce0f744f0.png",
+    "static/media/shoe 5.png": "/static/media/shoe 5.b0d81d13d572cf2f7881.png",
+    "static/media/empty.svg": "/static/media/empty.b5055e56282bba2de480b7282277f3f9.svg",
+    "index.html": "/index.html",
+    "static/media/wave.svg": "/static/media/wave.42edd5970e3619090a0f.svg",
+    "main.b64221e1.css.map": "/static/css/main.b64221e1.css.map",
+    "main.2f5b3bca.js.map": "/static/js/main.2f5b3bca.js.map",
+    "787.cea0d0ad.chunk.js.map": "/static/js/787.cea0d0ad.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b64221e1.css",
+    "static/js/main.2f5b3bca.js"
+  ]
+}
