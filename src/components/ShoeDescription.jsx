@@ -51,7 +51,9 @@ const ShoeDescription = ({ data }) => {
               <button className="sizes-button">11.5 (Womens 13)</button>
             </div>
             <div className="add-button-wrapper">
-              <button className="add-to-cart">Add To Cart</button>
+              <a className="add-to-cart-anchor" href="/cart">
+                <button className="add-to-cart"> Add To Cart</button>
+              </a>
             </div>
           </div>
         </div>
