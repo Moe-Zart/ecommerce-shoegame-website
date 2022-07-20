@@ -1,31 +1,43 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Shoe from "../components/Shoe";
+import { Link } from "react-router-dom";
 
-const Shoes = ({data: initialData}) => {
-    const[data ,setData] = useState(initialData)
-  function filterShoes(event){
-    console.log(event.target.value)
-    if(event.target.value=="LOW-HIGH"){
-      setData(data.slice().sort((a,b)=>(a.salePrice || a.originalPrice) - (b.salePrice || b.originalPrice))
-      )
+const Shoes = ({ data: initialData }) => {
+  const [data, setData] = useState(initialData);
+  function filterShoes(event) {
+    console.log(event.target.value);
+    if (event.target.value == "LOW-HIGH") {
+      setData(
+        data
+          .slice()
+          .sort(
+            (a, b) =>
+              (a.salePrice || a.originalPrice) -
+              (b.salePrice || b.originalPrice)
+          )
+      );
+    } else if (event.target.value == "HIGH-LOW") {
+      setData(
+        data
+          .slice()
+          .sort(
+            (a, b) =>
+              (b.salePrice || b.originalPrice) -
+              (a.salePrice || a.originalPrice)
+          )
+      );
+    } else if (event.target.value == "RATING") {
+      setData(data.slice().sort((a, b) => b.rating - a.rating));
     }
-    else if(event.target.value=="HIGH-LOW"){
-      setData(data.slice().sort((a,b)=>(b.salePrice || b.originalPrice) - (a.salePrice || a.originalPrice))
-      )
-    }
-    else if(event.target.value=="RATING"){
-      setData(data.slice().sort((a,b)=>(b.rating - a.rating))
-      )
-    }
-    }
-    
+  }
+
   return (
     <main id="shoes-main">
       <section>
         <div className="container shoe-page-container">
           <div className="row shoe-page-row">
-            <a className="back-arrow-anchor" href="/">
+            <Link className="back-arrow-anchor" to="/">
               <button className="back-arrow">
                 <FontAwesomeIcon
                   icon="arrow-left"
@@ -33,15 +45,12 @@ const Shoes = ({data: initialData}) => {
                 />
                 <span className="back-text"> Back</span>
               </button>
-            </a>
+            </Link>
             <div className="shoes-header">
               <h2 className="all-shoes">
                 All <span className="blue-text">Shoes</span>
               </h2>
-              <select
-                id="filter"
-                onChange={filterShoes} defaultValue={"sort"}
-              >
+              <select id="filter" onChange={filterShoes} defaultValue={"sort"}>
                 <option className="disabled-option" value="sort" disabled>
                   Sort
                 </option>
@@ -51,10 +60,9 @@ const Shoes = ({data: initialData}) => {
               </select>
             </div>
             <div className="shoes shoe-page-shoes">
-              {data.map(shoe =>  <Shoe key={shoe.id} shoe={shoe} />)}
-           
-
-              
+              {data.map((shoe) => (
+                <Shoe key={shoe.id} shoe={shoe} />
+              ))}
             </div>
           </div>
         </div>

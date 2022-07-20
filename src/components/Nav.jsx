@@ -1,6 +1,8 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ShoeGameLogo from "../assets/shoegame draft logo.png";
+import { Link } from 'react-router-dom'
+
 const Nav = () => {
   function openMenu() {
     document.body.classList += " menu-open";
@@ -14,19 +16,19 @@ const Nav = () => {
         <img className="shoegame-logo" src={ShoeGameLogo} alt="" />
         <ul className="nav-links">
           <li>
-            <a href="/" className="nav-link">
+            <Link to="/" className="nav-link">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href='/shoes' className="nav-link shoes-link">
+            <Link to='/shoes' className="nav-link shoes-link">
               Shoes
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="nav-link" href="/cart">
+            <Link to="/cart" className="nav-link" >
               <FontAwesomeIcon icon="shopping-cart" />
-            </a>
+            </Link>
           </li>
         </ul>
         <button className="menu" onClick={openMenu}>
@@ -38,17 +40,17 @@ const Nav = () => {
           </button>
           <ul className="menu-links">
             <li className="menu-list">
-              <a className="menu-link" href="" onClick={closeMenu}>
+              <Link to="" className="menu-link" onClick={closeMenu}>
                 Home{" "}
-              </a>
+              </Link>
             </li>
             <li className="menu-list">
-              <a className="menu-link" href='' onClick={closeMenu}>
+              <Link to='' className="menu-link" onClick={closeMenu}>
                 Shoes
-              </a>
+              </Link>
             </li>
             <li className="menu-list">
-              <a className="menu-link no-cursor">Contact</a>
+              <Link to="" className="menu-link no-cursor">Contact</Link>
             </li>
           </ul>
         </div>

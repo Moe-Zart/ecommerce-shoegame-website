@@ -510,17 +510,19 @@ select {
   padding: 16px 0;
   font-size: 30px;
   font-weight: bold;
+  bottom: 20px;
   background-color: rgb(1, 155, 216);
   color: whitesmoke;
   border: none;
   border-radius: 8px;
   width: 100%;
 }
-.add-to-cart-anchor {
+.add-to-cart-anchor{
   position: absolute;
-  width: 60%;
-  bottom: 20px;
+
+  width: 70%;
 }
+
 .info-text {
   text-align: left;
 }
@@ -590,6 +592,9 @@ select {
 .cart-order {
   width: 100%;
   display: flex;
+}
+.cart-body{
+  width: 100%;
 }
 .cart-img-wrapper {
   height: 110px;
