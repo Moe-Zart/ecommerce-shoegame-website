@@ -159,6 +159,10 @@ h2 {
   margin-bottom: 32px;
   text-align: center;
 }
+h4 {
+  color: white;
+  font-weight: bold;
+}
 button {
   cursor: pointer;
   transition: all 200ms ease;
@@ -211,7 +215,7 @@ button:active {
 .container {
   padding: 40px;
 }
-.footer-container{
+.footer-container {
 }
 .row {
   width: 100%;
@@ -535,7 +539,50 @@ select {
   padding: 0 60px;
 }
 .cart-container {
-  height:76vh;
+  height: 76vh;
+}
+.cart-subtitles {
+  width: 100%;
+  display: flex;
+  margin: 0 24px;
+  padding: 8px 16px;
+
+  background-color: rgb(1, 155, 216);
+}
+.shoe-sub {
+  width: 60%;
+}
+.quantity-sub {
+  width: 40%;
+}
+.price-sub {
+  max-width: 100px;
+  width: 100%;
+  text-align: end;
+}
+.cart-title-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+}
+.cart-shoe-info{
+  display: flex;
+  padding: 32px 0;
+}
+.cart-order{
+  
+}
+.cart-img-wrapper{
+  height: 110px;
+  margin-bottom: 0;
+}
+.cart-img{
+  max-width: 80%;
+}
+.cart-shoe-details{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 @media (max-width: 768px) {
   .shoegame-logo {
