@@ -13,6 +13,7 @@ import shoe12 from "./assets/shoe 12.png";
 import shoe13 from "./assets/shoe 13.png";
 import shoe14 from "./assets/shoe 14.png";
 import shoe15 from "./assets/shoe 15.png";
+import { faSpellCheck } from "@fortawesome/free-solid-svg-icons";
 const shoes = [
   {
     id: 1,
@@ -21,6 +22,8 @@ const shoes = [
     originalPrice: 249,
     salePrice: null,
     rating: 3.5,
+    description:
+      "The Dunk Low Goldenrod features mango yellow and black tones with a sleek, leather design and rubber sole.",
   },
   {
     id: 2,
@@ -29,6 +32,8 @@ const shoes = [
     originalPrice: 149,
     salePrice: null,
     rating: 4.5,
+    description:
+      "The Blazer Mid '77 Vintage White features white, grey and black tones; an instant classic released in 1972.",
   },
   {
     id: 3,
@@ -37,6 +42,8 @@ const shoes = [
     originalPrice: 399,
     salePrice: null,
     rating: 4,
+    description:
+      "The Yeezy Boost 350 V2 Zebra features a zebra inspired design with black and white tones.",
   },
   {
     id: 4,
@@ -45,6 +52,8 @@ const shoes = [
     originalPrice: 249,
     salePrice: null,
     rating: 3.5,
+    description:
+      "The NMD Pharrell Human Race Triple Black is a simple, yet sleek black shoe that is suitable for any occassion.",
   },
   {
     id: 5,
@@ -53,6 +62,8 @@ const shoes = [
     originalPrice: 149,
     salePrice: null,
     rating: 3,
+    description:
+      "The Air Force 1 White/Black is an instant classic and suitable for any occassion.",
   },
   {
     id: 6,
@@ -61,6 +72,8 @@ const shoes = [
     originalPrice: 349,
     salePrice: null,
     rating: 4,
+    description:
+      "The Jordan 1 Retro High OG Court Purple features purple, black and white tones with a High-Top design.",
   },
   {
     id: 7,
@@ -69,6 +82,8 @@ const shoes = [
     originalPrice: 249,
     salePrice: null,
     rating: 3,
+    description:
+      "The Ultraboost 4.0 DNA White is a simple white shoe with a comfortable design, perfectly suited for running.",
   },
   {
     id: 8,
@@ -77,6 +92,8 @@ const shoes = [
     originalPrice: 749,
     salePrice: null,
     rating: 4.5,
+    description:
+      "The (shoe) features (colour) tones with with a sleek, yet sporty design",
   },
   {
     id: 9,
@@ -85,6 +102,8 @@ const shoes = [
     originalPrice: 14999,
     salePrice: 11999,
     rating: 5,
+    description:
+      "The (shoe) features (colour) tones with with a sleek, yet sporty design",
   },
   {
     id: 10,
@@ -93,6 +112,8 @@ const shoes = [
     originalPrice: 399,
     salePrice: 299,
     rating: 4.5,
+    description:
+      "The (shoe) features (colour) tones with with a sleek, yet sporty design",
   },
   {
     id: 11,
@@ -101,6 +122,8 @@ const shoes = [
     originalPrice: 499,
     salePrice: null,
     rating: 3.5,
+    description:
+      "The (shoe) features (colour) tones with with a sleek, yet sporty design",
   },
   {
     id: 12,
@@ -109,6 +132,8 @@ const shoes = [
     originalPrice: 599,
     salePrice: 499,
     rating: 5,
+    description:
+      "The (shoe) features (colour) tones with with a sleek, yet sporty design",
   },
   {
     id: 13,
@@ -117,6 +142,8 @@ const shoes = [
     originalPrice: 199,
     salePrice: null,
     rating: 4,
+    description:
+      "The (shoe) features (colour) tones with with a sleek, yet sporty design",
   },
   {
     id: 14,
@@ -125,6 +152,8 @@ const shoes = [
     originalPrice: 249,
     salePrice: null,
     rating: 4,
+    description:
+      "The (shoe) features (colour) tones with with a sleek, yet sporty design",
   },
   {
     id: 15,
@@ -133,6 +162,8 @@ const shoes = [
     originalPrice: 249,
     salePrice: null,
     rating: 3,
+    description:
+      "The (shoe) features (colour) tones with with a sleek, yet sporty design",
   },
 ];
 export default shoes;

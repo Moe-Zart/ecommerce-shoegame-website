@@ -1,12 +1,17 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import imgId from "../assets/shoe 1.png";
-const ShoeDescription = () => {
+import Price from "./Price";
+import Rating from "./Rating";
+import { useParams } from "react-router-dom";
+const ShoeDescription = ({data}) => {
+  const {id} = useParams() //grabs the  id
+  const shoe = data.find(shoe=>shoe.id == id)
   return (
     <main id="shoes-main">
       <section>
         <div className="container shoecont">
-          <a className="back-arrow-anchor" href="/">
+          <a className="back-arrow-anchor" href="/shoes">
             <button className="back-arrow back-desc">
               <FontAwesomeIcon
                 icon="arrow-left"
@@ -17,14 +22,18 @@ const ShoeDescription = () => {
           </a>
           <div className="shoe-description-container">
             <figure className="shoe-description-img-wrapper">
-              <img src={imgId} className="shoe-description-img" />
+              <img src={shoe.url} className="shoe-description-img" />
             </figure>
             <div className="shoe-description-info-wrapper">
-              <h3 className="info-text">shoe.id</h3>
-              <h2 className="info-text">$shoe.salePrice</h2>
+              <h3 className="info-text">{shoe.title}</h3>
+              <Price originalPrice={shoe.originalPrice} salePrice={shoe.salePrice}/>
+              <Rating rating={shoe.rating} className="shoe-rating" />
               <p className="info-text">$shoe.description</p>
               <hr />
-              <p>Available Sizes (in Mens): <br /> <span className="womans">Womens size is 1.5 sizes up</span>   </p>
+              <p>
+                Available Sizes (in Mens): <br />{" "}
+                <span className="womans">Womens size is 1.5 sizes up</span>{" "}
+              </p>
               <div className="sizes">
                 <button className="sizes-button">5 (Womens 6.5)</button>
                 <button className="sizes-button">5.5 (Womens 7)</button>
@@ -42,8 +51,7 @@ const ShoeDescription = () => {
                 <button className="sizes-button">11.5 (Womens 13)</button>
               </div>
               <div className="add-button-wrapper">
-
-              <button className="add-to-cart">Add To Cart</button>
+                <button className="add-to-cart">Add To Cart</button>
               </div>
             </div>
           </div>

@@ -13,7 +13,7 @@ function App() {
         <Nav />
         <Route path="/" exact component={Home} />
         <Route path="/shoes" exact render={() => <Shoes data={data} />} />
-        <Route path="/shoes/1" render={() => <ShoeInfo data={data} />} />
+        <Route path="/shoes/:id" render={() => <ShoeInfo data={data} />} />
         <Footer />
       </section>
     </BrowserRouter>

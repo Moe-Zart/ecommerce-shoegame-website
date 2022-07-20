@@ -290,7 +290,6 @@ h3 {
 .shoe-img {
   padding: 16px;
   transition: all 150ms ease;
-  cursor: no-drop;
   vertical-align: bottom;
 }
 .shoe-wrapper:hover .shoe-img {
@@ -303,7 +302,6 @@ h3 {
 }
 .shoe-name:hover {
   text-decoration: underline;
-  cursor: no-drop;
 }
 .shoe-price-slash {
   text-decoration: line-through;
@@ -437,6 +435,13 @@ select {
 .all-shoes {
   margin: 0;
   padding: 0 16px;
+}
+.shoes-anchor{
+  text-decoration: none;
+  color: black;
+}
+.shoes-anchor:hover{
+  opacity: 1;
 }
 .back-desc {
   top: 0;

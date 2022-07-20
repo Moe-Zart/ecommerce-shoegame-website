@@ -1,10 +1,11 @@
 import React from 'react';
 import ShoeDescription from '../components/ShoeDescription';
 import RecommendedShoes from '../components/RecommendedShoes';
+import data from '../data'
 const ShoeInfo = () => {
     return (
         <div>
-            <ShoeDescription />
+            <ShoeDescription data={data}/>
             <RecommendedShoes />
         </div>
     );
