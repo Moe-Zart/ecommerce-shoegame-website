@@ -29,6 +29,25 @@ function App() {
       setCart([...cart, { ...shoe, quantity: 1 }]);
     }
   }
+  function changeQuantity(shoe, quantity) {
+    setCart(
+      cart.map((item) => {
+        if (item.id === shoe.id) {
+          return {
+            ...item,
+            quantity: +quantity,
+          };
+        } else {
+          return item;
+        }
+      })
+    );
+  }
+
+  function removeItem(item){
+setCart(cart.filter(shoe=> shoe.id !== item.id))
+  }
+
   useEffect(() => {
     console.log(cart);
   }, [cart]);
@@ -38,11 +57,24 @@ function App() {
         <Nav />
         <Route path="/" exact component={Home} />
         <Route path="/shoes" exact render={() => <Shoes data={data} />} />
-        <Route path="/shoes/:id" render={() => <ShoeInfo data={data} addToCart={addToCart} cart={cart} />} />
+        <Route
+          path="/shoes/:id"
+          render={() => (
+            <ShoeInfo data={data} addToCart={addToCart} cart={cart} />
+          )}
+        />
         <Route
           path="/cart"
           exact
-          render={() => <Cart key={data.id}data={data} cart={cart} />}
+          render={() => (
+            <Cart
+              key={data.id}
+              data={data}
+              cart={cart}
+              changeQuantity={changeQuantity}
+              removeItem={removeItem}
+            />
+          )}
         />
         <Footer />
       </section>

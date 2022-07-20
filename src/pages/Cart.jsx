@@ -1,6 +1,17 @@
-import React from "react";
-import img from "../assets/shoe 1.png";
-const Cart = ({ cart }) => {
+import React, { useState } from "react";
+import Price from "../components/Price";
+import empty from '../assets/empty.svg'
+import { Link } from "react-router-dom";
+const Cart = ({ cart, changeQuantity, removeItem }) => {
+    const total =() =>{
+
+        let counter = 0;
+        cart.forEach((item) => {
+            counter += +((item.salePrice || item.originalPrice) * item.quantity);
+        });
+        return counter;
+    }
+
   return (
     <div className="container cart-container">
       <div className="row">
@@ -18,41 +29,52 @@ const Cart = ({ cart }) => {
               <div className="cart-order">
                 <div className="cart-shoe-info">
                   <figure className="shoe-img-wrapper cart-img-wrapper shadow">
-                    <img className="shoe-img cart-img" src={img} alt="" />
+                    <img className="shoe-img cart-img" src={shoe.url} alt="" />
                   </figure>
                   <div className="cart-shoe-details">
-                    <div className="shoe-name">Dunk Low</div>
-                    <div className="shoe-cart-price">$149</div>
-                    <a className="shoe-cart-price" href="">
+                    <div className="shoe-name">{shoe.title}</div>
+                    <div className="shoe-cart-price">
+                      <Price
+                        salePrice={shoe.salePrice}
+                        originalPrice={shoe.originalPrice}
+                      />
+                    </div>
+                    <button className="shoe-cart-price shoe-cart-price-button" onClick={()=>removeItem(shoe)}>
                       Remove
-                    </a>
+                    </button>
                   </div>
                 </div>
                 <div className="quantity-sub cart-quantity">
                   <input
                     type="number"
+                    value={shoe.quantity}
                     min={0}
                     max={99}
                     className="cart-quantity-input"
+                    onChange={(event) =>
+                      changeQuantity(shoe, event.target.value)
+                    }
                   />
                 </div>
-                <p className="price-sub cart-price">$149</p>
+                <p className="price-sub cart-price">
+                  ${(shoe.salePrice || shoe.originalPrice) * shoe.quantity}
+                </p>
               </div>
             );
           })}
 
-          <div className="total">
+         {cart.length > 0 && <div className="total">
             <div className="total-component">
               <p className="total-sub">Subtotal</p>
-              <p className="total-sub">Price-10%*Price</p>
+              <p className="total-sub">${(total() * 0.9).toFixed(2)}</p>
             </div>
             <div className="total-component">
               <p className="total-sub">Tax</p>
-              <p className="total-sub">10%*Price</p>
+              <p className="total-sub">${(total()*0.1).toFixed(2)}</p>
             </div>
             <div className="total-component">
               <p className="total-sub total-final">Total</p>
-              <p className="total-sub total-final"> Price</p>
+              <p className="total-sub total-final"> ${(total()).toFixed(2)}</p>
             </div>
             <button
               className="add-to-cart checkout-button no-cursor"
@@ -60,8 +82,20 @@ const Cart = ({ cart }) => {
             >
               Checkout
             </button>
-          </div>
+          </div>}
         </div>
+        {
+            cart.length ===0 && (
+                <div className="cart-empty">
+            <img src={empty} alt="" className="cart-empty-img" />
+            <h2 className="empty-heading">Whoops! You do not have any shoes in your cart!</h2>
+            <Link to="/shoes">
+            <button className="browse-button">Browse Shoes</button>
+          </Link>
+        </div>
+            )
+        }
+        
       </div>
     </div>
   );
