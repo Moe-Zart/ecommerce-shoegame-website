@@ -1,14 +1,14 @@
-import React from 'react';
-import ShoeDescription from '../components/ShoeDescription';
-import RecommendedShoes from '../components/RecommendedShoes';
-import data from '../data'
+import React from "react";
+import ShoeDescription from "../components/ShoeDescription";
+import RecommendedShoes from "../components/RecommendedShoes";
+import data from "../data";
 const ShoeInfo = () => {
-    return (
-        <div>
-            <ShoeDescription data={data}/>
-            <RecommendedShoes />
-        </div>
-    );
-}
+  return (
+    <main id="shoes-main">
+      <ShoeDescription data={data} />
+      <RecommendedShoes />
+    </main>
+  );
+};
 
 export default ShoeInfo;
