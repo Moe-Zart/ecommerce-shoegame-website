@@ -5,10 +5,10 @@ import Header from "../components/Header";
 import Highlights from "../components/Highlights";
 import LatestArrivals from "../components/LatestArrivals";
 
-const Home = () => {
+const HomePage = () => {
   return (
-    
     <>
+    
       <Header />
       <main>
         <Highlights />
@@ -20,4 +20,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;

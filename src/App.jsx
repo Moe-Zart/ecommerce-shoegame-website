@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
-import Home from "./pages/Home";
+import Home from "./pages/HomePage";
 import Shoes from "./pages/Shoes";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import data from "./data";
