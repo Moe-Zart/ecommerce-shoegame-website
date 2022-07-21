@@ -1,9 +1,9 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ShoeGameLogo from "../assets/shoegame draft logo.png";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
-const Nav = ({numberOfItems}) => {
+const Nav = ({ numberOfItems }) => {
   function openMenu() {
     document.body.classList += " menu-open";
   }
@@ -21,22 +21,25 @@ const Nav = ({numberOfItems}) => {
             </Link>
           </li>
           <li>
-            <Link to='/shoes' className="nav-link shoes-link">
+            <Link to="/shoes" className="nav-link shoes-link">
               Shoes
             </Link>
           </li>
           <li>
-            <Link to="/cart" className="nav-link cart-link" >
+            <Link to="/cart" className="nav-link cart-link">
               <FontAwesomeIcon icon="shopping-cart" />
-              {numberOfItems > 0 && <span className="cart-length">{numberOfItems}</span>}
-              
-
+              {numberOfItems > 0 && (
+                <span className="cart-length">{numberOfItems}</span>
+              )}
             </Link>
-            {
-              
-            }
           </li>
         </ul>
+            <Link to="/cart" className="nav-link cart-link mobile-cart">
+              <FontAwesomeIcon icon="shopping-cart" />
+              {numberOfItems > 0 && (
+                <span className="cart-length">{numberOfItems}</span>
+              )}
+            </Link>
         <button className="menu" onClick={openMenu}>
           <FontAwesomeIcon icon="bars" />
         </button>
@@ -51,12 +54,14 @@ const Nav = ({numberOfItems}) => {
               </Link>
             </li>
             <li className="menu-list">
-              <Link to='' className="menu-link" onClick={closeMenu}>
+              <Link to="" className="menu-link" onClick={closeMenu}>
                 Shoes
               </Link>
             </li>
             <li className="menu-list">
-              <Link to="" className="menu-link no-cursor">Contact</Link>
+              <Link to="" className="menu-link no-cursor">
+                Contact
+              </Link>
             </li>
           </ul>
         </div>

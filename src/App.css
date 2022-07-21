@@ -671,6 +671,9 @@ select {
   padding: 24px 0;
   margin: 0;
 }
+.mobile-cart {
+  display: none;
+}
 @media (max-width: 768px) {
   .shoegame-logo {
     width: 200px;
@@ -718,51 +721,54 @@ select {
   .copyright {
     font-size: 16px;
   }
-  .shoe-description-container{
+  .shoe-description-container {
     padding: 0;
   }
-  .shoecont{
+  .shoecont {
     padding: 24px;
   }
-  .shoe-description-container{
+  .shoe-description-container {
     height: 100%;
   }
-  .sizes-button{
+  .sizes-button {
     width: calc(100% / 2 - 4px);
   }
-  .back-desc{
+  .back-desc {
     left: 12px;
   }
-  .shoe-description-info-wrapper{
+  .shoe-description-info-wrapper {
     margin-left: 12px;
   }
-  .shoe-description-img-wrapper{
+  .shoe-description-img-wrapper {
     flex: 1;
   }
-  .recommended-title{
+  .recommended-title {
     text-align: center;
     font-size: 24px;
   }
-  .recommended-shoes{
+  .recommended-shoes {
     padding: 0;
     flex-wrap: nowrap;
     width: 100%;
   }
-  .shoe-name{
+  .shoe-name {
     font-size: 18px;
   }
-  .shoe-price{
+  .shoe-price {
     font-size: 16px;
   }
-.shoe-img-wrapper{
-  height: 15vh ;
-}
+  .shoe-img-wrapper {
+    height: 15vh;
+  }
 }
 @media (max-width: 550px) {
   .nav-links {
     display: none;
   }
   .menu {
+    display: block;
+  }
+  .mobile-cart {
     display: block;
   }
   .header-img-wrapper {
@@ -780,6 +786,52 @@ select {
   }
   .arrow-up {
     font-size: 16px;
+  }
+  .shoe-description-container {
+    display: block;
+  }
+  .shoe-description-img-wrapper {
+    width: 80%;
+    margin: 0;
+    padding-top: 50px;
+    margin: 0 auto;
+  }
+  .shoe-description-info-wrapper {
+    width: 80%;
+    margin: 0;
+    margin: 0 auto;
+  }
+  .shoecont {
+    padding: 0;
+  }
+  .back-arrow {
+    font-size: 12px;
+    margin-top: 0;
+  }
+  .recommended-title {
+    width: 100%;
+    margin: 0;
+  }
+  .recommended-shoes {
+    flex-wrap: wrap;
+  }
+  .shoe-img-wrapper {
+    height: 25vh;
+  }
+  .add-to-cart {
+    font-size: 24px;
+  }
+  .add-to-cart-anchor {
+    bottom: 20px;
+  }
+  .copyright {
+    font-size: 12px;
+  }
+  .mobile-cart {
+    position: absolute;
+    right: 56px;
+    text-align: center;
+    font-size: 32px;
   }
 }
 @media (max-height: 768px) {
