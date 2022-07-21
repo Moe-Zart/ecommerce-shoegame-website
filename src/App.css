@@ -718,6 +718,45 @@ select {
   .copyright {
     font-size: 16px;
   }
+  .shoe-description-container{
+    padding: 0;
+  }
+  .shoecont{
+    padding: 24px;
+  }
+  .shoe-description-container{
+    height: 100%;
+  }
+  .sizes-button{
+    width: calc(100% / 2 - 4px);
+  }
+  .back-desc{
+    left: 12px;
+  }
+  .shoe-description-info-wrapper{
+    margin-left: 12px;
+  }
+  .shoe-description-img-wrapper{
+    flex: 1;
+  }
+  .recommended-title{
+    text-align: center;
+    font-size: 24px;
+  }
+  .recommended-shoes{
+    padding: 0;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+  .shoe-name{
+    font-size: 18px;
+  }
+  .shoe-price{
+    font-size: 16px;
+  }
+.shoe-img-wrapper{
+  height: 15vh ;
+}
 }
 @media (max-width: 550px) {
   .nav-links {
