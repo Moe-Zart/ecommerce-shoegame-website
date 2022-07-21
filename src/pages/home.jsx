@@ -7,6 +7,7 @@ import LatestArrivals from "../components/LatestArrivals";
 
 const Home = () => {
   return (
+    
     <>
       <Header />
       <main>
