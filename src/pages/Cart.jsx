@@ -27,7 +27,7 @@ const Cart = ({ cart, changeQuantity, removeItem }) => {
           {cart.map((shoe) => {
             return (
               <div className="cart-order">
-                <div className="cart-shoe-info">
+                <div className="cart-shoe-info shoe-sub">
                   <figure className="shoe-img-wrapper cart-img-wrapper shadow">
                     <img className="shoe-img cart-img" src={shoe.url} alt="" />
                   </figure>
