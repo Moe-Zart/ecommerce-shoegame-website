@@ -14,7 +14,7 @@ const Cart = ({ cart, changeQuantity, removeItem }) => {
 
   return (
     <div className="container cart-container">
-      <div className="row">
+      <div className="row cart-row">
         <div className="cart-title-wrapper">
           <h2 className="cart-title">Cart</h2>
         </div>
